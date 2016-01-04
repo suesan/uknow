@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}/static/css/style.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}/static/css/github.css">
+    <!-- <link rel="shortcut icon" href="{{STATIC_URL}}favicon.ico"> -->
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Markdown Editor </h1>
+            </div>
+        </header>
+        <div>
+            <input type="text" class="form-control" name="draft_item[title]" placeholder="タイトル">
+        </div>
+        <div>
+            <input type="text" class="form-control" name="draft_item[tags]" placeholder="タグをスペース区切りで5つまで入力" style="position: relative;outline: 0px;background: transparent;">
+        </div>
+        <div class="editor-body">
+            <div class="editor-body-markdown pull-left">
+                <textarea name="raw" id="editor-body-textarea">{{example}}</textarea>
+            </div><!-- /editor-body-markdown -->
+            <div class="editor-body-preview pull-right"></div><!-- /editor-body-preview -->
+            <div class="editorPreview_article markdownContent js-preview"
+        </div><!-- /editor-body -->
+    </div><!-- /container -->
+    <footer>
+        <div class="fotter-body">
+            <button >button</button>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{STATIC_URL}}static/js/django-ajax.js"></script>
+    <script src="{{STATIC_URL}}static/js/editor.js"></script>
+  </body>
+</html>
