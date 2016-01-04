@@ -42,10 +42,14 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+.hypothesis/
 
 # Translations
 *.mo
 *.pot
+
+# Django stuff:
+# *.log
 
 # Django stuff:
 *.log
