@@ -16,20 +16,24 @@
             </div>
         </header>
         <div>
-            <input type="text" class="form-control" name="draft_item[title]" placeholder="タイトル">
-        </div>
-        <div>
-            <input type="text" class="form-control" name="draft_item[tags]" placeholder="タグをスペース区切りで5つまで入力" style="position: relative;outline: 0px;background: transparent;">
-        </div>
-        <div class="editor-body">
-            <div class="editor-body-markdown pull-left">
-                <textarea name="raw" id="editor-body-textarea">{{example}}</textarea>
-            </div><!-- /editor-body-markdown -->
-            <div class="editor-body-preview pull-right"></div><!-- /editor-body-preview -->
-            <div class="editorPreview_article markdownContent js-preview">
-        </div><!-- /editor-body -->
-        <div class="fotter-body">
-            <button >投稿</button>
+            <form method="post" action="#">
+                <div>
+                    <input type="text" class="form-control" name="draft_item[title]" placeholder="タイトル">
+                </div>
+                <div>
+                    <input type="text" class="form-control" name="draft_item[tags]" placeholder="タグをスペース区切りで5つまで入力" style="position: relative;outline: 0px;background: transparent;">
+                </div>
+                <div class="editor-body">
+                    <div class="editor-body-markdown pull-left">
+                        <textarea name="raw" id="editor-body-textarea">{{example}}</textarea>
+                    </div><!-- /editor-body-markdown -->
+                    <div class="editor-body-preview pull-right"></div><!-- /editor-body-preview -->
+                    <div class="editorPreview_article markdownContent js-preview">
+                </div><!-- /editor-body -->
+                <div class="fotter-body">
+                    <button type="button">投稿</button>
+                </div>
+            </form>
         </div>
     </div><!-- /container -->
     <!-- <footer>
